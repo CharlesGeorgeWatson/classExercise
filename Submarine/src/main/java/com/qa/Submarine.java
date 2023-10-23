@@ -2,6 +2,22 @@ package com.qa;
 
 public class Submarine {
 
+    public Submarine(){
+        this("Unknown Sub",0,0,false,OWNER.United_States);
+    }
+
+    public Submarine(String name,int age, OWNER owner){
+        this(name, age, 0,false,owner);
+    }
+
+    public Submarine(String name,int age, int killCount, boolean isMilitary, OWNER owner){
+        this.setName(name);
+        this.setAge(age);
+        this.killCount=killCount;
+        this.isMilitary=isMilitary;
+        this.setOwner(owner);
+    }
+
     private String name;
 
     private int age = 5, killCount = 100;

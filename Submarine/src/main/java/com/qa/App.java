@@ -16,5 +16,9 @@ public class App
         System.out.println(subbyMcSubface.getName());
         subbyMcSubface.setOwner(OWNER.United_Kingdom);
         System.out.println(subbyMcSubface.getOwner());
+
+        Submarine USSGun = new Submarine("USSGun",2,OWNER.United_States);
+        
+
     }
 }
