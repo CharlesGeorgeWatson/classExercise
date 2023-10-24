@@ -18,7 +18,10 @@ public class App
         System.out.println(subbyMcSubface.getOwner());
 
         Submarine USSGun = new Submarine("USSGun",2,OWNER.United_States);
-        
+        Submarine NorthKorea1= new Submarine ("Kimmy",10,6000,true,OWNER.China);
 
+        System.out.println(subbyMcSubface);
+        System.out.println(USSGun);
+        System.out.println(NorthKorea1);
     }
 }

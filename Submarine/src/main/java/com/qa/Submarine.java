@@ -18,6 +18,12 @@ public class Submarine {
         this.setOwner(owner);
     }
 
+
+    //    @Override
+//    public String toString(){
+//        return String.format("Name: %s, Age: %d, Kill-count: %d, Is it a military sub: %b, Owner: %s", this.name, this.age,this.killCount,this.isMilitary,this.owner.toString());
+//    }
+
     private String name;
 
     private int age = 5, killCount = 100;
