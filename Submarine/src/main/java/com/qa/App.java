@@ -1,5 +1,7 @@
 package com.qa;
 
+import java.util.ArrayList;
+
 /**
  * Hello world!
  *
@@ -27,5 +29,21 @@ public class App
         System.out.println("The current building material is: " + Submarine.getBuildingMaterial());
         Submarine.setBuildingMaterial("Carbon Fibre");
         System.out.println("The new building material is: " + Submarine.getBuildingMaterial());
+
+//        System.out.println(subbyMcSubface.getWeaponry());
+        subbyMcSubface.printWeaponry(subbyMcSubface.getWeaponry());
+
+        String[] newWeaponry = new String[4];
+        newWeaponry[0]="Silly string";
+        newWeaponry[1]="Party poppers";
+        newWeaponry[2]="Taser";
+        newWeaponry[3]="Party nuke";
+        subbyMcSubface.setWeaponry(newWeaponry);
+        subbyMcSubface.printWeaponry(subbyMcSubface.getWeaponry());
+
+        ArrayList<Submarine> submarineList=new ArrayList<>();
+        submarineList.add(subbyMcSubface);
+        submarineList.add(USSGun);
+
     }
 }

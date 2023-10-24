@@ -27,8 +27,30 @@ public class Submarine {
     private String name;
     private int age = 5, killCount = 100;
     private boolean isMilitary = false;
-    private double depth = 0.01;
+    private double depth= 0.01;
+
     private OWNER owner;
+
+    private String[] weaponry={"Machine Fun","Canon","Nuke"};
+
+
+
+    public String[] getWeaponry() {
+        return weaponry;
+    }
+
+    public void setWeaponry(String[] weaponry) {
+        this.weaponry = weaponry;
+    }
+
+    public void printWeaponry(String[] weaponry){
+        for (String item : weaponry){
+            System.out.println(item);
+        }
+    }
+
+
+
     private static String buildingMaterial = "Stainless Steel";
 
     public String getName() {return name;}
