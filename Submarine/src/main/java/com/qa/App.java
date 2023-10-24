@@ -27,5 +27,9 @@ public class App
         System.out.println("The current building material is: " + Submarine.getBuildingMaterial());
         Submarine.setBuildingMaterial("Carbon Fibre");
         System.out.println("The new building material is: " + Submarine.getBuildingMaterial());
+        // Get kill count with password
+        System.out.println(NorthKorea1.getKillCount("unsure"));
+        System.out.println(NorthKorea1.getKillCount("123submarIne"));
+
     }
 }

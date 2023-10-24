@@ -17,12 +17,10 @@ public class Submarine {
         this.isMilitary=isMilitary;
         this.setOwner(owner);
     }
-
-
-    //    @Override
-//    public String toString(){
-//        return String.format("Name: %s, Age: %d, Kill-count: %d, Is it a military sub: %b, Owner: %s", this.name, this.age,this.killCount,this.isMilitary,this.owner.toString());
-//    }
+    @Override
+    public String toString(){
+        return String.format("Name: %s, Age: %d, Kill-count: %d, Is it a military sub: %b, Owner: %s", this.name, this.age,this.killCount,this.isMilitary,this.owner.toString());
+    }
 
     private String name;
     private int age = 5, killCount = 100;
@@ -42,10 +40,10 @@ public class Submarine {
         }
         else return 0;
     }
-    public void setKillCount(String pass)
+    public void setKillCount(String pass, int killCount)
     {
         if(pass.equals("123submarIne")) {
-
+            this.killCount = killCount;
         }
     }
     public void setOwner(OWNER owner)
