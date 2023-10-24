@@ -45,5 +45,10 @@ public class App
         submarineList.add(subbyMcSubface);
         submarineList.add(USSGun);
 
+        // Get kill count with password
+        System.out.println(NorthKorea1.getKillCount("unsure"));
+        System.out.println(NorthKorea1.getKillCount("123submarIne"));
+
+
     }
 }
