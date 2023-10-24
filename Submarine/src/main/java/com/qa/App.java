@@ -23,5 +23,9 @@ public class App
         System.out.println(subbyMcSubface);
         System.out.println(USSGun);
         System.out.println(NorthKorea1);
+
+        System.out.println("The current building material is: " + Submarine.getBuildingMaterial());
+        Submarine.setBuildingMaterial("Carbon Fibre");
+        System.out.println("The new building material is: " + Submarine.getBuildingMaterial());
     }
 }

@@ -25,11 +25,11 @@ public class Submarine {
 //    }
 
     private String name;
-
     private int age = 5, killCount = 100;
     private boolean isMilitary = false;
     private double depth = 0.01;
     private OWNER owner;
+    private static String buildingMaterial = "Stainless Steel";
 
     public String getName() {return name;}
     public void setName(String name) {this.name = name;}
@@ -57,5 +57,9 @@ public class Submarine {
     {
         return this.owner;
     }
+
+    public static String getBuildingMaterial() {return buildingMaterial;}
+    public static void setBuildingMaterial(String buildingMaterial) {Submarine.buildingMaterial = buildingMaterial;}
+
 
 }
