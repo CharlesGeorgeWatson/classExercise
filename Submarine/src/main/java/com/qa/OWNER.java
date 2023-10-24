@@ -5,5 +5,6 @@ public enum OWNER {
     United_States,
     North_Korea,
     United_Kingdom,
-    Russia
+    Russia,
+    UNKNOWN
 }
