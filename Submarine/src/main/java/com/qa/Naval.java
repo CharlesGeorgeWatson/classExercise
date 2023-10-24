@@ -2,7 +2,7 @@ package com.qa;
 
 public abstract class Naval extends MilitaryVehicle{
     public Naval() {
-        this("Unknown", 0, 0, OWNER.UNKNOWN, 0);
+        this.numberOfLifeJackets = 0;
     }
 
     public Naval(String name, int age, int killcount, OWNER owner, int numberOfLifeJackets) {

@@ -47,5 +47,7 @@ public abstract class MilitaryVehicle {
         this.name = name;
     }
 
-
+    public String shootMain() {
+        return this.getName() + " has shot their gun!";
+    }
 }
